@@ -3,7 +3,7 @@ public class Soma {
 
 	public static void main(String[] args) {
 		Random in = new Random();
-		int v[][], i, j, soma=0, LINHA=3, COL=4,col=0;
+		int v[][], i, j, soma=0, LINHA=3, COL=4,c=0;
 		v = new int [LINHA][COL];
 		
 		for(i=0;i<LINHA;i++) {
@@ -22,10 +22,10 @@ public class Soma {
 			for(j=0;j<COL;j++) {
 				if(col==LINHA) {
 					System.out.print("soma = "+v[i][j]+" \n");
-					col=0;
+					c=0;
 				}else {
 				System.out.print(v[i][j]+" ");
-				col++;
+				c++;
 				}
 			}
 		}
